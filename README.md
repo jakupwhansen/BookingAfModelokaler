@@ -11,3 +11,12 @@ Iteration 3 (SSD og SD) billder
 Iteration 4 (SSD og SD) billder
 
 <img width="3778" height="2057" alt="267e6981-a2ed-44b4-bb28-5bd016033ebf~1" src="https://github.com/user-attachments/assets/9c2bbe82-aba3-4514-b6cd-c4a0cc2a1c92" />
+
+Samlet SSD og SD lavet af Gemini
+
+<img width="1487" height="1102" alt="Booking som png" src="https://github.com/user-attachments/assets/a0498b3c-39e5-434f-a54e-2d0bc87805ff" />
+
+Klasse diagrammet lavet af Gemini
+
+<img width="1120" height="997" alt="Booking klasse diagram" src="https://github.com/user-attachments/assets/7827e489-39b3-42f9-a1c2-a7965b30fb8c" />
+
