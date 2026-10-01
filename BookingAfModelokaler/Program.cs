@@ -12,9 +12,27 @@ Console.WriteLine("-------------------BOOKING af lokaler--------");
 Console.WriteLine( booking.BookLokale("Stue 2"));
 Console.WriteLine(booking.BookLokale("Stue 2")); 
 Console.WriteLine(booking.BookLokale("Stue 2"));
+Console.WriteLine("-------------------AFLYS booking--------");
+Console.WriteLine( booking.AflysBooking("Stue 2"));
+Console.WriteLine(booking.AflysBooking("Stue 2"));
 class Booking
 {
     private List<Lokal> lokaleList = new List<Lokal>();
+    public String AflysBooking (string navn)
+    {
+        String svar = "ikke fundet";
+        Lokal l = find(navn);
+        if(l.optaget == true)
+        {
+            l.optaget = false;
+            svar = "OK";
+        }
+        else
+        {
+            svar ="Lokal var allerede ikke optaget";
+        }
+        return svar;
+    }
     private bool tjekLedighed(Lokal lokal)
     {
         bool svar = false;
