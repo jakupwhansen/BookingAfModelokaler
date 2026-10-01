@@ -1,4 +1,6 @@
-﻿Booking booking = new Booking();
+﻿using System.Diagnostics.SymbolStore;
+
+Booking booking = new Booking();
 booking.OpretLokale("Stue 1", 44);
 booking.OpretLokale("Stue 2", 40);
 booking.OpretLokale("Stue 3", 49);
@@ -15,9 +17,32 @@ Console.WriteLine(booking.BookLokale("Stue 2"));
 Console.WriteLine("-------------------AFLYS booking--------");
 Console.WriteLine( booking.AflysBooking("Stue 2"));
 Console.WriteLine(booking.AflysBooking("Stue 2"));
+Console.WriteLine("-------------------VisLedigeLokaler--------");
+Console.WriteLine(booking.VisLedigeLokaler());
+booking.BookLokale("Stue 5");
+booking.BookLokale("Stue 1");
+Console.WriteLine("-------------------VisLedigeLokaler--------");
+Console.WriteLine(booking.VisLedigeLokaler());
+
 class Booking
 {
     private List<Lokal> lokaleList = new List<Lokal>();
+    public String VisLedigeLokaler ()
+    {
+       string svar = "";
+        int i = 0;
+        while(i< lokaleList.Count)
+        {
+            Lokal l = lokaleList[i];
+            if(l.optaget == false)
+            {
+                svar = svar + l.navn + Environment.NewLine;
+
+            }
+            i++;
+        }
+        return svar;
+    }
     public String AflysBooking (string navn)
     {
         String svar = "ikke fundet";
