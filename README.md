@@ -7,3 +7,7 @@ Iteration 2 (SSD og SD) billder
 Iteration 3 (SSD og SD) billder
 
 <img width="3720" height="2296" alt="29cce5cb-ab0f-404a-b118-6d7ee48c999a~1" src="https://github.com/user-attachments/assets/4f50fbd9-04f0-477c-99b1-beb79ea1685c" />
+
+Iteration 4 (SSD og SD) billder
+
+<img width="3778" height="2057" alt="267e6981-a2ed-44b4-bb28-5bd016033ebf~1" src="https://github.com/user-attachments/assets/9c2bbe82-aba3-4514-b6cd-c4a0cc2a1c92" />
