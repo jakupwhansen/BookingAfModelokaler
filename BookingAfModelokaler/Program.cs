@@ -8,10 +8,34 @@ booking.OpretLokale("Stue 5", 12);
 Console.WriteLine(booking.findLokale("Stue 3"));
 Console.WriteLine(booking.findLokale("Stue 7"));
 Console.WriteLine(booking.findLokale("Stue 1"));
-
+Console.WriteLine("-------------------BOOKING af lokaler--------");
+Console.WriteLine( booking.BookLokale("Stue 2"));
+Console.WriteLine(booking.BookLokale("Stue 2")); 
+Console.WriteLine(booking.BookLokale("Stue 2"));
 class Booking
 {
     private List<Lokal> lokaleList = new List<Lokal>();
+    private bool tjekLedighed(Lokal lokal)
+    {
+        bool svar = false;
+     
+        if (lokal.optaget == false)
+        {
+            svar = true;
+        }
+        return svar;
+    }
+    public bool BookLokale(string navn)
+    {        
+        Lokal l = find(navn);
+        bool svar = tjekLedighed(l);       
+        if(svar)
+        {
+           l.optaget = true;
+        }
+
+        return svar;
+    }
     public void OpretLokale(string navn, int antal)
     {
         opret(navn,antal);
